@@ -12,7 +12,7 @@ import schemeOutImage from "../../../images/site/eqjs-scheme-out.png"
 import ShareThis from "../../../components/ShareThis.astro";
 ---
 <PageLayout title="EASYQUERY.JS - Easy way to implements DB features into your web application">
-    <section class="container-fluid bg-light easyjs-hero hero-block bg-light">
+    <section class="container-fluid bg-light easyjs-hero hero-block">
         <div class="container">
             <div class="row">
                 <div class="cell-lg-6 d-flex flex-column flex-justify-center">
@@ -26,9 +26,9 @@ import ShareThis from "../../../components/ShareThis.astro";
                         </div>
                     </div>
                     <div class="mt-10">
-                        <a href="https://github.com/easyquery/OtherSamples" class="button fg-white text-bold secondary">Samples</a>
-                        <a href="https://demo.korzh.com/easyquery-asp-net-core-razor" class="button secondary fg-white text-bold">Demo</a>
-                        <a href="#licensing" class="button fg-white text-bold secondary">Purchase</a>
+                        <a href="https://github.com/easyquery/OtherSamples" class="button text-bold yellow">Samples</a>
+                        <a href="https://demo.korzh.com/easyquery-asp-net-core-razor" class="button text-bold yellow">Demo</a>
+                        <a href="#licensing" class="button text-bold yellow">Purchase</a>
                     </div>
                 </div>
 
@@ -106,7 +106,7 @@ import ShareThis from "../../../components/ShareThis.astro";
     <br/>
     <br/>
 
-    <section class="container-fluid bg-light">
+    <section class="container-fluid" style="background:#b9b176a8">
         <div class="container">
             <div class="row">
                 <div class="cell-lg-5 d-flex flex-column flex-justify-center">
@@ -379,12 +379,21 @@ import ShareThis from "../../../components/ShareThis.astro";
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
+    .hero-block {
+        background:
+                url(../../../images/site/bg-left.svg) left center / contain no-repeat scroll padding-box border-box,
+                url(../../../images/site/bg-right.svg) right center / contain no-repeat scroll padding-box border-box,
+                linear-gradient(60deg, #8c7d03, #bfb884) 0 0 / auto repeat scroll padding-box border-box #8c7d03;
+        background-blend-mode: normal, normal;
+        color: rgb(255, 255, 255);
+    }
     .app-bar .app-bar-menu > li:hover, .app-bar .app-bar-menu li:not(.no-hover):hover {
-        background-color: rgba(248,248,248, 1)!important;
+        background-color: #aa9e4a!important;
+        color: #ffffff!important;
     }
     .app-bar {
         .active-toggle {
-            background-color: rgba(248,248,248, 1)!important;
+            background-color: #aa9e4a!important;
         }
     }
     .step-number {

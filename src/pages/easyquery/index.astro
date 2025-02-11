@@ -36,9 +36,9 @@ import ShareThis from "../../components/ShareThis.astro";
                         </p>
                     </div>
                     <div class="mt-10">
-                        <a href="#" onclick="getTrial()" class="button fg-white text-bold bg-pink-hover" style="background: #e950b4;">Get Trial</a>
-                        <a href="https://demo.korzh.com/easyquery-asp-net-core-razor" class="button fg-white text-bold bg-pink-hover" style="background: #e950b4;">Demo</a>
-                        <a href="#licensing" class="button fg-white text-bold bg-pink-hover" style="background: #e950b4;">Purchase</a>
+                        <a href="#" onclick="getTrial()" class="button primary">Get Trial</a>
+                        <a href="https://demo.korzh.com/easyquery-asp-net-core-razor" class="button primary">Demo</a>
+                        <a href="#licensing" class="button primary">Purchase</a>
                     </div>
                 </div>
 
@@ -394,7 +394,7 @@ import ShareThis from "../../components/ShareThis.astro";
                                 <p>ASP.NET Core edition of EasyQuery may be used with almost any front-end platform and/or framework (MVC, Razor pages, Angular, React, Vue, etc).
                             </div>
                             <div class="mt-4">
-                                <a href="/easyquery/docs/getting-started/asp-net-core" class="button info">Try It Now</a>
+                                <a href="/easyquery/docs/getting-started/asp-net-core" class="button primary">Try It Now</a>
                             </div>
                         </div>
                         <div id="asp-net-edition-desc">
@@ -413,7 +413,7 @@ import ShareThis from "../../components/ShareThis.astro";
                                 </ul>
                             </div>
                             <div class="mt-4">
-                                <a href="/download/eqn_asp_setup.exe" class="button info">Download Free Trial</a>
+                                <a href="/download/eqn_asp_setup.exe" class="button primary">Download Free Trial</a>
                             </div>
                         </div>
                         <div id="winforms-edition-desc">
@@ -432,7 +432,7 @@ import ShareThis from "../../components/ShareThis.astro";
                                 </ul>
                             </div>
                             <div class="mt-4">
-                                <a href="/download/eqn_win_setup.exe" class="button info">Download Free Trial</a>
+                                <a href="/download/eqn_win_setup.exe" class="button primary">Download Free Trial</a>
                             </div>
                         </div>
                         <div id="silverlight-edition-desc">
@@ -448,7 +448,7 @@ import ShareThis from "../../components/ShareThis.astro";
                                 </ul>
                             </div>
                             <div class="mt-4">
-                                <a href="/download/eqn_sl_setup.exe" class="button info">Download Free Trial</a>
+                                <a href="/download/eqn_sl_setup.exe" class="button primary">Download Free Trial</a>
                             </div>
                         </div>
                         <div id="wpf-edition-desc">
@@ -459,7 +459,7 @@ import ShareThis from "../../components/ShareThis.astro";
                                 </p>
                             </div>
                             <div class="mt-4">
-                                <a href="/download/eqn_wpf_setup.exe" class="button info">Download Free Trial</a>
+                                <a href="/download/eqn_wpf_setup.exe" class="button primary">Download Free Trial</a>
                             </div>
                         </div>
                         <div id="delphi-edition-desc">
@@ -476,7 +476,7 @@ import ShareThis from "../../components/ShareThis.astro";
                                 </ul>
                             </div>
                             <div class="mt-4">
-                                <a href="/download/sq_setup.exe" class="button info">Download Free Trial</a>
+                                <a href="/download/sq_setup.exe" class="button primary">Download Free Trial</a>
                             </div>
                         </div>
                     </div>
@@ -1008,7 +1008,7 @@ import ShareThis from "../../components/ShareThis.astro";
 </PageLayout>
 <style is:global lang="less">
     .app-bar .app-bar-menu > li:hover, .app-bar .app-bar-menu li:not(.no-hover):hover {
-        background-color: rgba(173,74,176, 1)!important;
+        background-color: #585a96!important;
         color: #ffffff;
         a::before {
             border-color: #fff;
@@ -1016,7 +1016,7 @@ import ShareThis from "../../components/ShareThis.astro";
     }
     .app-bar {
         .active-toggle {
-            background-color: rgba(173,74,176, 1)!important;
+            background-color: #585a96!important;
             color: #ffffff!important;
             &::before {
                 border-color: #fff;
@@ -1027,16 +1027,16 @@ import ShareThis from "../../components/ShareThis.astro";
         background:
                 url(../../images/site/bg-left.svg) left center / contain no-repeat scroll padding-box border-box,
                 url(../../images/site/bg-right.svg) right center / contain no-repeat scroll padding-box border-box,
-                linear-gradient(60deg, rgb(82, 67, 170), rgb(237, 80, 180)) 0% 0% / auto repeat scroll padding-box border-box rgb(82, 67, 170);
+                linear-gradient(60deg, #2d2a6c, #7980b5) 0 0 / auto repeat scroll padding-box border-box #2d2a6c;
         background-blend-mode: normal, normal;
         color: rgb(255, 255, 255);
     }
     .easyquery-screens {
         padding: 40px 0 40px;
-        background-color: #ff6bc2;
+        background-color:#8285b5;
     }
     .easyquery-editions-bg {
-        background-color: rgb(121,46,120);
+        background-color: #2d235f;
         color: #ffffff;
         padding: 40px 0;
     }
@@ -1044,7 +1044,7 @@ import ShareThis from "../../components/ShareThis.astro";
     .easyquery-editions-tabs {
         li {
             &.active {
-                background-color: rgb(141, 56, 140) !important;
+                background-color: #44358f !important;
                 border: none!important;
             }
             a {
