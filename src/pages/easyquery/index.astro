@@ -22,12 +22,13 @@ import silverlightImage from "../../images/logos/silverlight.png"
 import wpfImage from "../../images/logos/wpf.png"
 import delphiImage from "../../images/logos/delphi.png"
 import ShareThis from "../../components/ShareThis.astro";
+import FrequentlyAskedQuestions from "../../partials/faq.astro"
 ---
 <PageLayout title="EasyQuery.NET - Build a .NET database application simple and easy">
     <section class="container-fluid hero-section hero-block">
         <div class="container">
             <div class="row">
-                <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+                <div class="cell-md-6 d-flex flex-column flex-justify-center">
                     <h1 class="hero-section__header">EASYQUERY</h1>
                     <h2 class="mt-0">Build a .NET database application simple and easy</h2>
                     <div class="text-leader2">
@@ -42,9 +43,9 @@ import ShareThis from "../../components/ShareThis.astro";
                     </div>
                 </div>
 
-                <div class="cell-lg-1"></div>
+                <div class="cell-md-1"></div>
 
-                <div class="cell-lg-5 d-none d-flex-lg flex-column flex-justify-center">
+                <div class="cell-md-5 d-none d-flex-lg flex-column flex-justify-center">
                     <div class="">
                         <Image src={advSearchImage} alt="Advanced search" class="shadow-3"/>
                     </div>
@@ -53,45 +54,44 @@ import ShareThis from "../../components/ShareThis.astro";
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-    <section class="container-fluid">
+    <section class="container-fluid mt-10">
         <div class="container">
             <div class="row">
-                <div class="cell-lg-5 d-flex flex-column flex-justify-center mb-10">
-                    <h2 class="text-bold">OVER<span>VIEW</span></h2>
-
-                    <div class="text-bold">EASYQUERY is a data management framework for your .NET application that assists with:</div>
-
-                    <ul>
-                        <li>dynamic custom queries (advanced search)</li>
-                        <li>ad-hoc reporting</li>
-                        <li>aggregation and grouping</li>
-                        <li>paging, filtering, sorting, and various other tasks</li>
-                    </ul>
-
-                    All of this is accomplished through a simple, user-friendly UI and an efficient back-end processing engine.
+                <div class="cell-md-5 d-flex flex-column flex-justify-center mb-10">
+                    <div class="box">
+                        <h2 class="">OVER<span>VIEW</span></h2>
+    
+                        <div class="text-bold">EASYQUERY is a data management framework for your .NET application that assists with:</div>
+    
+                        <ul>
+                            <li>dynamic custom queries (advanced search)</li>
+                            <li>ad-hoc reporting</li>
+                            <li>aggregation and grouping</li>
+                            <li>paging, filtering, sorting, and various other tasks</li>
+                        </ul>
+    
+                        All of this is accomplished through a simple, user-friendly UI and an efficient back-end processing engine.
+                    </div>
                 </div>
 
                 <div class="cell-md-1 d-none d-flex-lg flex-align-center">
-                    <div class="bracket" style="margin-top: -40px;">&#x7b;</div>
+                    <div class="bracket"></div>
                 </div>
 
-                <div class="cell-lg-6">
-                    <div id="organizing">
+                <div class="cell-md-6 pl-4-md">
+                    <div id="organizing" class="box">
                         <h4 class="text-bold">01. Organizing the data flow</h4>
                         <p class="smaller-text">
                             Any data processing in a database application usually begins and ends at the presentation level. The user asks the system for some data, this "request" is converted into a query (or several queries) to the database, we receive data from there, process it, format it if necessary and send it back for display in the UI.
                         </p>
                     </div>
-                    <div id="queries" class="mb-6 mt-6">
+                    <div id="queries" class="box">
                         <h4 class="text-bold">02. Complex queries</h4>
                         <p class="smaller-text">
                             In many projects, the number of parameters by which you can search for data is in the tens or even hundreds. EasyQuery provides a unified and easy-to-use UI for building complex queries on many parameters, converting them into database queries and displaying results.
                         </p>
                     </div>
-                    <div id="visualisation">
+                    <div id="visualisation" class="box">
                         <h4 class="text-bold">03. Data visualization</h4>
                         <p class="smaller-text">
                             EasyQuery includes many visual components both to build complex queries and to display the results of those queries in all possible variations. It includes different widgets that represent the query (QueryPanel, ColumnsPanel, etc), a multifunctional table (grid) to display the result, pagination controls, aggregation and grouping UI, charts, dashboards, ad-hoc reporting components and many other UI widgets.
@@ -102,32 +102,29 @@ import ShareThis from "../../components/ShareThis.astro";
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-    <section class="container-fluid">
+    <section class="container-fluid pt-10 pb-10">
         <div class="container">
-            <h2 class="text-center text-bold">USE<span>CASES</span></h2>
+            <h2 class="text-center display2">USE<span>CASES</span></h2>
             <p class="text-leader2 mt-10 mb-10">
                 As we said before, EasyQuery will be helpful almost of any database application. However, for some most common scenarios we create a ready-to-use sample projects that you start using right away with a minimal adjustments to your data model and the database type. Here are these scenarios:
             </p>
 
-            <ul data-role="tabs" data-tabs-type="pills" data-expand="true" data-cls-tabs="flex-justify-center mt-2">
+            <ul data-role="tabs" data-tabs-type="pills" data-expand="true" data-align="center" style="--tabs-item-background-active: var(--color-dark-violet); --tabs-item-color-active: #fff;">
                 <li><a href="#reporting">Reporting</a></li>
                 <li><a href="#adv-search">Advanced Search</a></li>
                 <li><a href="#filtering">Data Filtering</a></li>
                 <li><a href="#searching">Searching</a></li>
             </ul>
 
-            <div>
+            <div id="box-use-cases">
                 <div id="reporting">
-                    <div class="row mt-10">
-                        <div class="cell-lg-6 pr-10">
-                            <div class="">
+                    <div class="row mt-4">
+                        <div class="cell-ld-6 pr-10">
+                            <div class="h-100 d-flex flex-align-center">
                                 <Image src={adhocReportingImage} alt="Adhoc Reporting" class="border bd-default" />
                             </div>
                         </div>
-                        <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+                        <div class="cell-ld-6 d-flex flex-column flex-justify-center">
                             <h3 class="text-bold">Ad-hoc reporting</h3>
                             Have you ever heard from your customer: "We need to change 3 reports and create 5 new"? Have you calculated the time and energy spent on all these trifles?
                             <p>With EasyQuery, you empower your users to build, modify, and save queries for reports, create charts, and export results.
@@ -137,13 +134,13 @@ import ShareThis from "../../components/ShareThis.astro";
                     </div>
                 </div>
                 <div id="adv-search">
-                    <div class="row mt-20">
-                        <div class="cell-lg-6 pr-10">
+                    <div class="row mt-4">
+                        <div class="cell-ld-6 pr-10">
                             <div class="">
                                 <Image src={advSearchImage} alt="Advanced Search" class="border bd-default" />
                             </div>
                         </div>
-                        <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+                        <div class="cell-ld-6 d-flex flex-column flex-justify-center">
                             <h3 class="text-bold">Advanced search form</h3>
                             What if your users need to search by many different parameters and in various combinations? Typical search form looks like a mess of different controls related to one database field each. It may occupy the full screen but even in this case it may not cover all possible combinations of conditions.
                             <p>Do your users fated to use such ugly forms? Not with EasyQuery!
@@ -153,13 +150,13 @@ import ShareThis from "../../components/ShareThis.astro";
                     </div>
                 </div>
                 <div id="filtering">
-                    <div class="row mt-20">
-                        <div class="cell-lg-6 pr-10">
+                    <div class="row mt-4">
+                        <div class="cell-ld-6 pr-10">
                             <div class="">
                                 <Image src={dataFilteringImage} alt="Data Filtering" class="border bd-default" />
                             </div>
                         </div>
-                        <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+                        <div class="cell-ld-6 d-flex flex-column flex-justify-center">
                             <h3 class="text-bold">Data filtering UI</h3>
                             Whenever you show the grid with more than several rows of data, your users may need to filter the data somehow. Usually, you don't know how exactly they need to filter the data. Let them use EasyQuery and relax! They will do the job easily and will be happy.
                             <p><a href="https://demo.korzh.com/easyquery-asp-net-core-razor/data-filtering">Live demo...</a></p>
@@ -167,13 +164,13 @@ import ShareThis from "../../components/ShareThis.astro";
                     </div>
                 </div>
                 <div id="searching">
-                    <div class="row mt-20">
-                        <div class="cell-lg-6 pr-10">
+                    <div class="row mt-4">
+                        <div class="cell-ld-6 pr-10">
                             <div class="">
                                 <Image src={fullTextSearchImage} alt="Fulltext Search" class="border bd-default" />
                             </div>
                         </div>
-                        <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+                        <div class="cell-ld-6 d-flex flex-column flex-justify-center">
                             <h3 class="text-bold">Simple text search</h3>
                             Querying the data is relatively easy if know what and where you want to search. But what if you don't?
                             <p>Imagine you need to search for a specific word or phrase across your entire database, in any field. You might also want to apply specific criteria.
@@ -189,31 +186,27 @@ import ShareThis from "../../components/ShareThis.astro";
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-
-    <section class="container-fluid easyquery-screens">
+    <section class="container-fluid easyquery-screens pt-10">
         <div class="container">
             <div class="row">
                 <div class="cell-lg-6">
                     <div class="row" data-role="lightbox" data-cls-close="bg-red fg-white" data-icon-close="<span class='mif-cross'>">
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={aspNetMVCImage} data-original={aspNetMVCImage.url} alt=""/>
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={adhocReportingImage} data-original={adhocReportingImage.url} alt=""/>
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={gridFilteringImage} data-original={gridFilteringImage.url} alt=""/>
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={advangleImage} data-original={advangleImage.url} alt=""/>
                             </div>
@@ -228,11 +221,7 @@ import ShareThis from "../../components/ShareThis.astro";
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-
-    <section class="container-fluid">
+    <section class="container-fluid pt-10">
         <div class="container">
             <div class="row">
                 <div class="cell-lg-5 d-flex flex-column flex-justify-center">
@@ -247,39 +236,39 @@ import ShareThis from "../../components/ShareThis.astro";
                     </ul>
 
                     <p>Don't build everything from scratch. Use ERSK as the starting point!
-                    <div class="mt-10">
-                        <a href="/easy-report-starter-kit">More info...</a>
+                    <div class="mt-4">
+                        <a class="button success" href="/easy-report-starter-kit">More info...</a>
                     </div>
                 </div>
                 <div class="cell-md-1 d-none d-flex-md flex-align-center"></div>
                 <div class="cell-lg-6 easy-report-images">
                     <div class="row" data-role="lightbox" data-cls-close="bg-red fg-white" data-icon-close="<span class='mif-cross'>">
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={easyReport01Image} data-original={easyReport01Image.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={easyReport02Image} data-original={easyReport02Image.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={easyReport03Image} data-original={easyReport03Image.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={easyReport04Image} data-original={easyReport04Image.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={easyReport05Image} data-original={easyReport05Image.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={easyReport06Image} data-original={easyReport06Image.url} alt="" />
                             </div>
@@ -289,15 +278,9 @@ import ShareThis from "../../components/ShareThis.astro";
             </div>
         </div>
     </section>
-
-
-    <br/>
-    <hr/>
-    <br/>
-
-
-    <section class="container-fluid">
-        <div class="container">
+    
+    <section class="container-fluid pb-10 pt-10">
+        <div class="container border-top bd-default pt-10">
             <div class="row">
                 <div class="cell-lg-6 d-flex flex-align-center pr-10">
                     <Image src={aspNetMVCImage} alt="" class="border bd-default" />
@@ -308,24 +291,20 @@ import ShareThis from "../../components/ShareThis.astro";
                         EasyQuery.JS is a JavaScript framework that makes it easy to implement advanced search, data filtering or adhoc reporting scenarios (like on the screenshots) in your web application.
                         <p class="mt-4">So, as you can see EasyQuery.JS gives you a simple to use but powerful user interface to build a query or a filter to your data. Even users unfamiliar with SQL can harness its power with the simplicity of the natural language.
                     </div>
-                    <div class="mt-10">
-                        <a href="/easyquery/javascript">More info...</a>
+                    <div class="mt-4">
+                        <a class="button success" href="/easyquery/javascript">More info...</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-
     <section class="container-fluid bg-light pt-10 pb-10">
         <div class="container">
             <h2 class="text-center text-bold">SUPPORTED <span>TECHNOLOGIES</span></h2>
             <div class="row mt-10">
                 <div class="cell-lg-4 p-2">
-                    <div class="border bd-default p-4 h-100 bg-white">
+                    <div class="box h-100">
                         <h4 class="text-bold ml-4">PLATFORMS</h4>
                         <ul>
                             <li>ASP.NET Core</li>
@@ -338,7 +317,7 @@ import ShareThis from "../../components/ShareThis.astro";
                     </div>
                 </div>
                 <div class="cell-lg-4 p-2">
-                    <div class="border bd-default p-4 h-100 bg-white">
+                    <div class="box h-100">
                         <h4 class="text-bold ml-4">DATABASES</h4>
                         <ul>
                             <li>SQL Server</li>
@@ -351,7 +330,7 @@ import ShareThis from "../../components/ShareThis.astro";
                     </div>
                 </div>
                 <div class="cell-lg-4 p-2">
-                    <div class="border bd-default p-4 h-100 bg-white">
+                    <div class="box h-100">
                         <h4 class="text-bold ml-4">QUERY LANGUAGES</h4>
                         <ul>
                             <li>SQL</li>
@@ -368,13 +347,13 @@ import ShareThis from "../../components/ShareThis.astro";
     <section class="container-fluid easyquery-editions-bg">
         <div class="container">
             <h2 class="text-center text-bold">EASYQUERY <span>EDITIONS</span></h2>
-            <ul data-role="tabs" data-expand-point="md" data-tabs-type="pills" data-cls-tabs="flex-justify-center mt-10 mb-10 bg-transparent" data-cls-tabs-list-item="bg-transparent" class=" easyquery-editions-tabs">
-                <li><a href="#asp-core-edition-desc" class="flex-column"><Image src={aspNetCoreImage} alt="" /><div class="text-center p-2">ASP.NET Core</div></a></li>
-                <li><a href="#asp-net-edition-desc" class="flex-column"><Image src={aspNetImage} alt="" /><div class="text-center p-2">ASP.NET</div></a></li>
-                <li><a href="#winforms-edition-desc" class="flex-column"><Image src={winFormsImage} alt="" /><div class="text-center p-2">WinForms</div></a></li>
-                <li><a href="#silverlight-edition-desc" class="flex-column"><Image src={silverlightImage} alt="" /><div class="text-center p-2">Silverlight</div></a></li>
-                <li><a href="#wpf-edition-desc" class="flex-column"><Image src={wpfImage} alt="" /><div class="text-center p-2">WPF</div></a></li>
-                <li><a href="#delphi-edition-desc" class="flex-column"><Image src={delphiImage} alt="" /><div class="text-center p-2">Delphi/VCL</div></a></li>
+            <ul id="editions-list" data-role="tabs" data-expand-point="md" data-type="pills" data-align="center" data-cls-tabs="mt-10 mb-10 bg-transparent" data-cls-tabs-list-item="bg-transparent d-flex flex-align-center" class=" easyquery-editions-tabs">
+                <li><a href="#asp-core-edition-desc" class="flex-column"><div class="text-center">ASP.NET Core</div></a></li>
+                <li><a href="#asp-net-edition-desc" class="flex-column"><div class="text-center">ASP.NET</div></a></li>
+                <li><a href="#winforms-edition-desc" class="flex-column"><div class="text-center">WinForms</div></a></li>
+                <li><a href="#silverlight-edition-desc" class="flex-column"><div class="text-center">Silverlight</div></a></li>
+                <li><a href="#wpf-edition-desc" class="flex-column"><div class="text-center">WPF</div></a></li>
+                <li><a href="#delphi-edition-desc" class="flex-column"><div class="text-center">Delphi/VCL</div></a></li>
             </ul>
 
             <div class="row">
@@ -490,7 +469,7 @@ import ShareThis from "../../components/ShareThis.astro";
         <div class="container pt-10 pb-10">
             <h2 class="text-center text-bold">LICENSE <span>PRICE</span></h2>
             <p class="text-center">Read the <a href="/easyquery/eula">End User License Agreement</a> before installing EasyQuery.</p>
-            <ul id="license-price" data-role="tabs" data-expand-point="md" data-tabs-type="pills" data-cls-tabs="flex-justify-center mt-10 mb-10">
+            <ul id="license-price" data-role="tabs" data-expand-point="md" data-type="pills" data-align="center" data-cls-tabs="mt-10 mb-10" style="--tabs-item-background-active: #44358f; --tabs-item-color-active: #fff; ">
                 <li class=""><a href="#asp-core-edition">ASP.NET Core</a></li>
                 <li class=""><a href="#asp-net-edition">ASP.NET</a></li>
                 <li class=""><a href="#winforms-edition">WinForms</a></li>
@@ -933,96 +912,16 @@ import ShareThis from "../../components/ShareThis.astro";
                 </table>
             </div>
 
-            <div class="remark success">
-                <div class="text-leader2">You are free to use EasyQuery.NET for evaluation purposes and/or in non-profit projects.</div>
+            <div data-role="directive" data-directive="tip" data-show-icon="true">
+                <p>You are free to use EasyQuery.NET for evaluation purposes and/or in non-profit projects.</p>
             </div>
         </div>
     </section>
-
-    <section class="container-fluid bg-light">
-        <div class="container pt-10 pb-10">
-            <h2 class="text-center text-bold">FREQUENTLY ASKED QUESTIONS</h2>
-            <div class="mt-10">
-                <div class="question">Do I need to pay some additional fee per domain, or per user, etc.?</div>
-                <div class="answer">
-                    <p>No. The license price is final, no additional fees. Once you purchased the EasyQuery you may use it in any number of your projects for any number of end users or site visitors. There are NO deployment limitations.</p>
-                    <p>We provide annual subscriptions for our products to give you access to the latest releases and support.</p>
-                </div>
-
-                <div class="question">What forms of payment do you accept?</div>
-                <div class="answer">
-                    <p>We accept payment via credit card, check, paypal, wire transfer and some others. You can select the acceptable payment method on the order form.</p>
-                </div>
-
-                <div class="question">How can I get a quote?</div>
-                <div class="answer">
-                    <p>Click the appropriate "Buy Now" button in the table above to open the order page. At the end of that page you will find "Get Quote" button. Fill out the form and press this button to get a quote.</p>
-                </div>
-
-                <div class="question">What is subscription?</div>
-                <div class="answer">
-                    <p>The subscription is annual fee we take to give you access to the latest releases and support. Valid subscription allows you to download a new versions of the Product. When the new version is released you don't need to pay for upgrade - just download it from our Members Area.</p>
-                    <p><strong>The first year subscription is included to the license price.</strong></p>
-                    <p>With expired subscription you will no longer have access to new releases and support. You will be able to renew the expired subscription (so called "welcome back"), but it will cost you more than twice as much.</p>
-                </div>
-
-                <div class="question">How much does the subscription cost? How can I purchase it?</div>
-                <div class="answer">
-                    <p>The 1-year subscription renewal costs about 25% of license price for those who renew the subscription in time - before the expiration date. And there is a "welcome back" price - about 70% - for those who are late.</p>
-                    <p> To purchase the subscription go to <a href="/account">your account page</a>, sign in, find "Licenses" panel and click the "Renew" link on the right of selected license.</p>
-                    <p>To get the lower price the renewal should be done before the subscription expiration date. You can find the expiration date on the Licenses page of our Members Area. We also will remind you several times by e-mail.</p>
-                </div>
-
-                <div class="question">Can I continue using EasyQuery when my subscription expires?</div>
-                <div class="answer">
-                    <p>Yes you can. Your EasyQuery license is perpetual. However, you will be using the last product version released before your subscription expired.</p>
-                    <p>If you choose not to renew your subscription, you will no longer have access to new releases and support, and we will be very sad.</p>
-                </div>
-
-                <div class="question">How do the licenses work?</div>
-                <div class="answer">
-                    <p>Your license is tied to your Korzh.com account.</p>
-                    <p>To get the full (registered) copy of EasyQuery simply log into <a href="/account">your account page</a> and download the latest version of the product.</p>
-                </div>
-
-                <div class="question">What about support?</div>
-                <div class="answer">
-                    <p>We offer sterling support online in order to make you succeed. You may initiate a support ticket on <a href="/support">this page</a>.</p>
-                </div>
-
-                <div class="question">Do you have money-back guarantee?</div>
-                <div class="answer">
-                    <p>We provide the full-featured Community edition for free. We hope that you tried to use it during some time to make an informed decision when purchasing the product.</p>
-                    <p>Unfortunately, we can not give money-back guarantee on Company license. So, please be attentive - <strong>the Company license is non-refundable!</strong></p>
-                </div>
-
-                <div class="question">We are resellers. Do you have any special offers for resellers?</div>
-                <div class="answer">
-                    <p> Yes, we have. Go to <a href="/resellers">reseller's FAQ</a> for details</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
+    <FrequentlyAskedQuestions/>
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
-    .app-bar .app-bar-menu > li:hover, .app-bar .app-bar-menu li:not(.no-hover):hover {
-        background-color: #585a96!important;
-        color: #ffffff;
-        a::before {
-            border-color: #fff;
-        }
-    }
-    .app-bar {
-        .active-toggle {
-            background-color: #585a96!important;
-            color: #ffffff!important;
-            &::before {
-                border-color: #fff;
-            }
-        }
-    }
     .hero-section {
         background:
                 url(../../images/site/bg-left.svg) left center / contain no-repeat scroll padding-box border-box,
@@ -1050,6 +949,12 @@ import ShareThis from "../../components/ShareThis.astro";
             a {
                 color: #fff!important;
             }
+        }
+    }
+    #box-use-cases {
+        img {
+            height: auto;
+            max-height: 100%;
         }
     }
 </style>

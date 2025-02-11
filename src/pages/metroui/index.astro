@@ -19,7 +19,7 @@ import ShareThis from "../../components/ShareThis.astro";
     <section class="container-fluid hero-section hero-block">
         <div class="container">
             <div class="row">
-                <div class="cell-lg-6">
+                <div class="cell-md-6">
                     <div class="h-100 d-flex flex-column flex-justify-center">
                         <h1 class="hero-section__header">Metro UI</h1>
                         <h2 class="mt-0">your way to build a web application</h2>
@@ -33,30 +33,27 @@ import ShareThis from "../../components/ShareThis.astro";
                             <span class="enlarge-4">7K+</span> stars on GitHub
                         </div>
                         <div>
-                            <a href="https://github.com/olton/Metro-UI-CSS" class="button info">Try Metro UI</a>
-                            <a href="https://docs.metroui.org.ua/" class="button info">Read Docs</a>
-                            <a href="#licensing" class="button info">Purchase Support</a>
+                            <a href="https://github.com/olton/metroui" class="button info"><span class="mif-github mr-1"></span>Try Metro UI</a>
+                            <a href="https://docs.metroui.org.ua/" class="button info"><span class="mif-book-reference mr-1"></span>Read Docs</a>
+                            <a href="#licensing" class="button alert">Premium Support</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="cell-lg-1"></div>
+                <div class="cell-md-1"></div>
 
-                <div class="cell-lg-5 d-none d-flex-lg flex-column flex-justify-center hero-images">
+                <div class="cell-md-5 d-none d-flex-lg flex-column flex-justify-center hero-images">
                     <Image src={pandoraImage} alt="Pandora Image" class="shadow-3"/>
                 </div>
             </div>
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-    <section class="container-fluid">
+    <section class="container-fluid pt-10 pb-10">
         <div class="container">
             <div class="row">
-                <div class="cell-lg-3 cell-sm-6">
-                    <div class="border p-4 m-2 h-100">
+                <div class="cell-md-6 cell-sm-6">
+                    <div class="box h-100">
                         <img src={userInterfaceImage.src} alt="" style="height: 166px">
                         <h5 class="text-bold">100+ COMPONENTS</h5>
                         <div>
@@ -64,8 +61,8 @@ import ShareThis from "../../components/ShareThis.astro";
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-3 cell-sm-6">
-                    <div class="border p-4 m-2 h-100">
+                <div class="cell-md-6 cell-sm-6">
+                    <div class="box h-100">
                         <img src={rocketImage.src} alt="" style="height: 166px">
                         <h5 class="text-bold">DEPENDENCY FREE</h5>
                         <div>
@@ -73,8 +70,8 @@ import ShareThis from "../../components/ShareThis.astro";
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-3 cell-sm-6">
-                    <div class="border p-4 m-2 h-100">
+                <div class="cell-md-6 cell-sm-6">
+                    <div class="box h-100">
                         <div class="fg-red ml-1 reduce-4 pos-absolute text-bold" style="right: 20px;">PAID OPTION</div>
                         <img src={bugsImage.src} alt="" style="height: 166px">
                         <h5 class="text-bold">TECHNICAL SUPPORT</h5>
@@ -83,8 +80,8 @@ import ShareThis from "../../components/ShareThis.astro";
                         </div>
                     </div>
                 </div>
-                <div class="cell-lg-3 cell-sm-6">
-                    <div class="border p-4 m-2 h-100">
+                <div class="cell-md-6 cell-sm-6">
+                    <div class="box h-100">
                         <img src={financeImage.src} alt="" style="height: 166px">
                         <h5 class="text-bold">FREE LICENSE</h5>
                         <div>
@@ -96,40 +93,37 @@ import ShareThis from "../../components/ShareThis.astro";
         </div>
     </section>
 
-    <br/>
-    <br/>
-
     <section class="container-fluid metroui-screens">
         <div class="container">
             <div class="row">
                 <div class="cell-lg-6">
                     <div class="row" data-role="lightbox" data-cls-close="bg-red fg-white" data-icon-close="<span class='mif-cross'>">
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview border bd-default">
                                 <Image src={pandoraImage} data-original={pandoraImage.src} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview border bd-default">
                                 <Image src={mirohostImage} data-original={mirohostImage.src} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview border bd-default">
                                 <Image src={startScreenImage} data-original={startScreenImage.src} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview border bd-default">
                                 <Image src={aistantImage} data-original={aistantImage.src} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview border bd-default">
                                 <Image src={minataurImage} data-original={minataurImage.src} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview border bd-default">
                                 <Image src={githubImage} data-original={githubImage.src} alt="" />
                             </div>
@@ -150,22 +144,19 @@ import ShareThis from "../../components/ShareThis.astro";
 
     <section class="container-fluid metro-in-action">
         <div class="container">
-            <div class="row mt-10">
-                <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+            <div class="row mt-10 gap-8">
+                <div class="cell-md-6 d-flex flex-column flex-justify-center">
                     <h2 class="text-bold">PANDORA <span>DEMO</span></h2>
+                    <hr/>
                     <p class="pr-20">
                         Pandora - is a Responsive and Clean Admin Dashboard template. This template created with Metro UI with uses native classes, elements, and components. The template contains different types of reusable and professional responsive components with different variations.
                     </p>
-                    <div class="mt-4 row w-75">
-                        <div class="cell-6">
-                            <a href="https://themes.org.ua/pandora/" class="button large info w-100">Try Demo</a>
-                        </div>
-                        <div class="cell-6">
-                            <a href="https://github.com/olton/Pandora" class="button large success w-100 ml-1">Get Source</a>
-                        </div>
+                    <div class="mt-4 d-flex flex-rowflex-justify-start gap-1">
+                        <a href="https://themes.org.ua/pandora/" class="button info">Try Demo</a>
+                        <a href="https://github.com/olton/Pandora" class="button success">Get Source</a>
                     </div>
                 </div>
-                <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+                <div class="cell-md-6 d-flex flex-column flex-justify-center">
                     <a href="https://themes.org.ua/pandora">
                         <Image src={pandoraBannerImage} alt="Pandora Banner Image" style="transform: scale(1.1)"/>
                     </a>
@@ -184,10 +175,10 @@ import ShareThis from "../../components/ShareThis.astro";
                 <table class="price-table striped table">
                     <tbody>
                     <tr>
-                        <td><h2 class="text-bold">SUPPORT <span>PRICE</span></h2></td>
+                        <td></td>
                         <td>
                             <div class="text-leader">Community</div>
-                            <small>$</small><span class="price">0</span>
+                            <small>$</small><span class="price">Free</span>
                         </td>
                         <td>
                             <div class="text-leader">Developer</div>
@@ -281,22 +272,6 @@ import ShareThis from "../../components/ShareThis.astro";
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
-    .app-bar .app-bar-menu > li:hover, .app-bar .app-bar-menu li:not(.no-hover):hover {
-        background-color: #507bb9!important;
-        color: #ffffff;
-        a::before {
-            border-color: #fff;
-        }
-    }
-    .app-bar {
-        .active-toggle {
-            background-color: #507bb9!important;
-            color: #ffffff!important;
-            &::before {
-                border-color: #fff;
-            }
-        }
-    }
     .metroui-screens {
         background-color: rgb(123, 171, 255);
         padding: 40px 0;

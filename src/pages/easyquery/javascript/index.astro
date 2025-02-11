@@ -10,12 +10,13 @@ import gridFilteringImage from "../../../images/site/grid-filtering.png"
 import schemeInImage from "../../../images/site/eqjs-scheme-in.png"
 import schemeOutImage from "../../../images/site/eqjs-scheme-out.png"
 import ShareThis from "../../../components/ShareThis.astro";
+import FrequentlyAskedQuestions from "../../../partials/faq.astro"
 ---
 <PageLayout title="EASYQUERY.JS - Easy way to implements DB features into your web application">
     <section class="container-fluid bg-light easyjs-hero hero-block">
         <div class="container">
             <div class="row">
-                <div class="cell-lg-6 d-flex flex-column flex-justify-center">
+                <div class="cell-md-6 d-flex flex-column flex-justify-center">
                     <h1 class="hero-section__header">EASYQUERY.JS</h1>
                     <h2 class="mt-0">Easy way to implements DB features</h2>
                     <div class="text-leader2">
@@ -32,9 +33,9 @@ import ShareThis from "../../../components/ShareThis.astro";
                     </div>
                 </div>
 
-                <div class="cell-lg-1"></div>
+                <div class="cell-md-1"></div>
 
-                <div class="cell-lg-5 d-none d-flex-lg flex-column flex-justify-center hero-images">
+                <div class="cell-md-5 d-none d-flex-lg flex-column flex-justify-center hero-images">
                     <div>
                         <Image src={advangleImage} alt="" class="shadow-3"/>
                     </div>
@@ -43,10 +44,7 @@ import ShareThis from "../../../components/ShareThis.astro";
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-    <section class="container-fluid">
+    <section class="container-fluid pt-10 pb-10">
         <div class="container">
             <div class="row">
                 <div class="cell-md-4">
@@ -60,7 +58,7 @@ import ShareThis from "../../../components/ShareThis.astro";
                 </div>
             </div>
 
-            <h2 class="text-center text-bold">MAIN BENEFITS</h2>
+            <h2 class="text-center text-bold mt-10">MAIN BENEFITS</h2>
 
             <div class="row mt-10">
                 <div class="cell-md-6 p-1">
@@ -69,7 +67,7 @@ import ShareThis from "../../../components/ShareThis.astro";
                         <p>
                             EasyQuery.JS can be used with any server-side platform. However, it will be easier to do with .NET or NodeJS (soon) than with others
                         </p>
-                        <span class="mif-checkmark feature-check fg-gray"></span>
+                        <span class="mif-server feature-check"></span>
                     </div>
                 </div>
                 <div class="cell-md-6 p-1">
@@ -78,7 +76,7 @@ import ShareThis from "../../../components/ShareThis.astro";
                         <p>
                             It is suitable for both old-style MVC applications or modern SPA (Angular, Vue, React)
                         </p>
-                        <span class="mif-checkmark feature-check fg-gray"></span>
+                        <span class="mif-shuttle feature-check"></span>
                     </div>
                 </div>
                 <div class="cell-md-6 p-1">
@@ -87,7 +85,7 @@ import ShareThis from "../../../components/ShareThis.astro";
                         <p>
                             EasyQuery.JS is written in TypeScript. So, it gives you even more benefits (like type checking and intelli-sense) even if you are coding with a pure JavaScript
                         </p>
-                        <span class="mif-checkmark feature-check fg-gray"></span>
+                        <span class="mif-typescript feature-check"></span>
                     </div>
                 </div>
                 <div class="cell-md-6 p-1">
@@ -96,17 +94,14 @@ import ShareThis from "../../../components/ShareThis.astro";
                         <p>
                             All the complexity of SQL is hidden - just simple to use and easy to learn UI.
                         </p>
-                        <span class="mif-checkmark feature-check fg-gray"></span>
+                        <span class="mif-person-outline feature-check"></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-    <section class="container-fluid" style="background:#b9b176a8">
+    <section class="container-fluid pt-10 pb-10" style="background:#b9b176a8">
         <div class="container">
             <div class="row">
                 <div class="cell-lg-5 d-flex flex-column flex-justify-center">
@@ -116,22 +111,22 @@ import ShareThis from "../../../components/ShareThis.astro";
                 </div>
                 <div class="cell-lg-6 easy-report-images">
                     <div class="row" data-role="lightbox" data-cls-close="bg-red fg-white" data-icon-close="<span class='mif-cross'>">
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={aspNetMvcImage} data-original={aspNetMvcImage.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={reportingImage} data-original={reportingImage.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={gridFilteringImage} data-original={gridFilteringImage.url} alt="" />
                             </div>
                         </div>
-                        <div class="cell-6 p-2">
+                        <div class="cell-6">
                             <div class="image-preview h-100 border bd-default">
                                 <Image src={advangleImage} data-original={advangleImage.url} alt="" />
                             </div>
@@ -147,7 +142,7 @@ import ShareThis from "../../../components/ShareThis.astro";
             <h2 class="text-center text-bold">HOW DOES IT WORK</h2>
 
             <div class="row mt-20">
-                <div class="cell-md-6">
+                <div class="cell-md-6 pos-relative">
                     <h4 class="mb-0">Using EasyQuery backend services</h4>
                     <div>/for ASP.NET (Core) and NodeJs/</div>
                     <Image src={schemeInImage} alt="" class="mt-4" style="height: 500px;" />
@@ -156,8 +151,9 @@ import ShareThis from "../../../components/ShareThis.astro";
                     <div>/for other backend platforms/</div>
                     <Image src={schemeOutImage} alt="" class="mt-4" style="height: 500px;" />
                 </div>
-                <div class="cell-md-6">
-                    <div class="mb-8 border bd-default pt-4 pb-4 pl-10 pr-10">
+                <div class="cell-md-6 pos-relative">
+                    <div class="box">
+                        <h2>Step 1</h2>
                         <div class="step-number">1</div>
 
                         <div class="mt-5">
@@ -169,7 +165,8 @@ import ShareThis from "../../../components/ShareThis.astro";
                             <br/><br/>.NET version of EasyQuery allows you to build data model at run-time. On other platforms, you will need to create data model “manually” using a special utility.
                         </p>
                     </div>
-                    <div class="mb-8 border bd-default pt-4 pb-4 pl-10 pr-10">
+                    <div class="box">
+                        <h2>Step 2</h2>
                         <div class="step-number">2</div>
 
                         <div class="mt-5">
@@ -178,7 +175,8 @@ import ShareThis from "../../../components/ShareThis.astro";
                             <p>In case of using EasyQuery Server, your application transfers the query JSON to the Server.
                         </div>
                     </div>
-                    <div class="mb-8 border bd-default pt-4 pb-4 pl-10 pr-10">
+                    <div class="box">
+                        <h2>Step 3</h2>
                         <div class="step-number">3</div>
 
                         <div class="mt-5">
@@ -188,7 +186,8 @@ import ShareThis from "../../../components/ShareThis.astro";
                             <p>Now the application is able to connect to the database and to run the SQL query on it.
                         </div>
                     </div>
-                    <div class="mb-8 border bd-default pt-4 pb-4 pl-10 pr-10">
+                    <div class="box">
+                        <h2>Step 4</h2>
                         <div class="step-number">4</div>
 
                         <div class="mt-5">
@@ -210,7 +209,7 @@ import ShareThis from "../../../components/ShareThis.astro";
                 <br><br>The work to be done depends on the stack you use on back-end.
             </p>
 
-            <div class="bg-white border bd-default mt-4 mb-4 p-10">
+            <div class="box">
                 <h4>.NET</h4>
 
                 <div>
@@ -220,7 +219,7 @@ import ShareThis from "../../../components/ShareThis.astro";
                 </div>
             </div>
 
-            <div class="bg-white border bd-default mt-4 mb-4 p-10">
+            <div class="box">
                 <h4>ALL OTHER SERVER-SIDE PLATFORMS</h4>
 
                 <div>
@@ -309,73 +308,7 @@ import ShareThis from "../../../components/ShareThis.astro";
         </div>
     </section>
 
-    <br/>
-    <br/>
-
-    <section class="container-fluid bg-light">
-        <div class="container pt-10 pb-10">
-            <h2 class="text-center text-bold">FREQUENTLY ASKED QUESTIONS</h2>
-            <div class="mt-20">
-                <div class="question">Do I need to pay some additional fee per domain, or per user, etc.?</div>
-                <div class="answer">
-                    <p>No. The license price is final, no additional fees. Once you purchased the EasyQuery you may use it in any number of your projects for any number of end users or site visitors. There are NO deployment limitations.</p>
-                    <p>We provide annual subscriptions for our products to give you access to the latest releases and support.</p>
-                </div>
-
-                <div class="question">What forms of payment do you accept?</div>
-                <div class="answer">
-                    <p>We accept payment via credit card, check, paypal, wire transfer and some others. You can select the acceptable payment method on the order form.</p>
-                </div>
-
-                <div class="question">How can I get a quote?</div>
-                <div class="answer">
-                    <p>Click the appropriate "Buy Now" button in the table above to open the order page. At the end of that page you will find "Get Quote" button. Fill out the form and press this button to get a quote.</p>
-                </div>
-
-                <div class="question">What is subscription?</div>
-                <div class="answer">
-                    <p>The subscription is annual fee we take to give you access to the latest releases and support. Valid subscription allows you to download a new versions of the Product. When the new version is released you don't need to pay for upgrade - just download it from our Members Area.</p>
-                    <p><strong>The first year subscription is included to the license price.</strong></p>
-                    <p>With expired subscription you will no longer have access to new releases and support. You will be able to renew the expired subscription (so called "welcome back"), but it will cost you more than twice as much.</p>
-                </div>
-
-                <div class="question">How much does the subscription cost? How can I purchase it?</div>
-                <div class="answer">
-                    <p>The 1-year subscription renewal costs about 25% of license price for those who renew the subscription in time - before the expiration date. And there is a "welcome back" price - about 70% - for those who are late.</p>
-                    <p> To purchase the subscription go to <a href="/account">your account page</a>, sign in, find "Licenses" panel and click the "Renew" link on the right of selected license.</p>
-                    <p>To get the lower price the renewal should be done before the subscription expiration date. You can find the expiration date on the Licenses page of our Members Area. We also will remind you several times by e-mail.</p>
-                </div>
-
-                <div class="question">Can I continue using EasyQuery when my subscription expires?</div>
-                <div class="answer">
-                    <p>Yes you can. Your EasyQuery license is perpetual. However, you will be using the last product version released before your subscription expired.</p>
-                    <p>If you choose not to renew your subscription, you will no longer have access to new releases and support, and we will be very sad.</p>
-                </div>
-
-                <div class="question">How do the licenses work?</div>
-                <div class="answer">
-                    <p>Your license is tied to your Korzh.com account.</p>
-                    <p>To get the full (registered) copy of EasyQuery simply log into <a href="/account">your account page</a> and download the latest version of the product.</p>
-                </div>
-
-                <div class="question">What about support?</div>
-                <div class="answer">
-                    <p>We offer sterling support online in order to make you succeed. You may initiate a support ticket on <a href="/support">this page</a>.</p>
-                </div>
-
-                <div class="question">Do you have money-back guarantee?</div>
-                <div class="answer">
-                    <p>We provide the full featured Community edition for free. We hope that you tried to use it during some time to make an informed decision purchasing the product.</p>
-                    <p>Unfortunately, we can not give money-back guarantee on Company license. So, please be attentive - <strong>the Company license is non-refundable!</strong></p>
-                </div>
-
-                <div class="question">We are resellers. Do you have any special offers for resellers?</div>
-                <div class="answer">
-                    <p> Yes, we have. Go to <a href="/resellers">reseller's FAQ</a> for details</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <FrequentlyAskedQuestions />
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
@@ -386,15 +319,6 @@ import ShareThis from "../../../components/ShareThis.astro";
                 linear-gradient(60deg, #8c7d03, #bfb884) 0 0 / auto repeat scroll padding-box border-box #8c7d03;
         background-blend-mode: normal, normal;
         color: rgb(255, 255, 255);
-    }
-    .app-bar .app-bar-menu > li:hover, .app-bar .app-bar-menu li:not(.no-hover):hover {
-        background-color: #aa9e4a!important;
-        color: #ffffff!important;
-    }
-    .app-bar {
-        .active-toggle {
-            background-color: #aa9e4a!important;
-        }
     }
     .step-number {
         position: absolute;
