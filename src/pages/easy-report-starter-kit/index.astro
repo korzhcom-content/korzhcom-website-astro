@@ -29,8 +29,8 @@ import FrequentlyAskedQuestions from "../../partials/faq.astro";
                         </div>
                     </div>
                     <div class="mt-4">
-                        <a href="#licensing" class="button fg-white text-bold bg-violet" >GET IT NOW</a>
-                        <a href="https://easy.report" class="button fg-white text-bold bg-violet" >Live Demo</a>
+                        <a href="#licensing" class="button fg-white bg-dark-violet bd-violet" >GET IT NOW</a>
+                        <a href="https://easy.report" class="button fg-white bg-dark-violet bd-violet" >Live Demo</a>
                     </div>
                 </div>
 
@@ -261,6 +261,17 @@ import FrequentlyAskedQuestions from "../../partials/faq.astro";
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
+    #appbar {
+        --appbar-item-background-hover: #80668b;
+        --appbar-item-color-hover: #ffffff;
+        --d-menu-item-background-hover: #80668b;
+        --d-menu-item-color-hover: #ffffff;
+        .active-container {
+            background-color: #80668b;
+            color: #fff;
+        }
+    }
+    
     .hero-section {
         background:
                 url(../../images/site/bg-left.svg) left center / contain no-repeat scroll padding-box border-box,

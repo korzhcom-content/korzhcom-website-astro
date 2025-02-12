@@ -23,9 +23,9 @@ import FrequentlyAskedQuestions from "../../partials/faq.astro";
                         </p>
                     </div>
                     <div class="mt-10">
-                        <a href="/download/locsetup.exe" class="button text-bold bg-green-hover" style="background: #a9d97d;">Get Trial</a>
-                        <a href="/localizer/docs" class="button text-bold bg-green-hover" style="background: #a9d97d;">Read Docs</a>
-                        <a href="#licensing" class="button text-bold bg-green-hover" style="background: #a9d97d;">Purchase</a>
+                        <a href="/download/locsetup.exe" class="button border-none success">Get Trial</a>
+                        <a href="/localizer/docs" class="button border-none success">Read Docs</a>
+                        <a href="#licensing" class="button border-none alert">Purchase</a>
                     </div>
                 </div>
 
@@ -393,6 +393,17 @@ import FrequentlyAskedQuestions from "../../partials/faq.astro";
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
+    #appbar {
+        --appbar-item-background-hover: #53915e;
+        --appbar-item-color-hover: #ffffff;
+        --d-menu-item-background-hover: #53915e;
+        --d-menu-item-color-hover: #ffffff;
+        .active-container {
+            background-color: #53915e;
+            color: #fff;
+        }
+    }
+    
     .hero-section {
         background:
                 url(../../images/site/bg-left.svg) left center / contain no-repeat scroll padding-box border-box,

@@ -922,6 +922,17 @@ import FrequentlyAskedQuestions from "../../partials/faq.astro"
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
+    #appbar {
+        --appbar-item-background-hover: #53558d;
+        --appbar-item-color-hover: #ffffff;
+        --d-menu-item-background-hover: #53558d;
+        --d-menu-item-color-hover: #ffffff;
+        .active-container {
+            background-color: #53558d;
+            color: #fff;
+        }
+    }
+
     .hero-section {
         background:
                 url(../../images/site/bg-left.svg) left center / contain no-repeat scroll padding-box border-box,

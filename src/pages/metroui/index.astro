@@ -272,6 +272,16 @@ import ShareThis from "../../components/ShareThis.astro";
     <MoreQuestions/>
 </PageLayout>
 <style is:global lang="less">
+    #appbar {
+        --appbar-item-background-hover: var(--color-windstorm);
+        --appbar-item-color-hover: #ffffff;
+        --d-menu-item-background-hover: var(--color-windstorm);
+        --d-menu-item-color-hover: #ffffff;
+        .active-container {
+            background-color: var(--color-windstorm);
+            color: #fff;
+        }
+    }
     .metroui-screens {
         background-color: rgb(123, 171, 255);
         padding: 40px 0;
