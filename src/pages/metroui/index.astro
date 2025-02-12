@@ -1,6 +1,6 @@
 ---
 import PageLayout from "../../layouts/PageLayout.astro";
-import MoreQuestions from "../../components/MoreQuestions.astro";
+import MoreQuestions from "../../partials/more.astro";
 import {Image} from "astro:assets";
 import pandoraImage from "../../images/site/pandora.jpg"
 import pandoraBannerImage from "../../images/site/pandora-banner.jpg"
@@ -260,11 +260,11 @@ import ShareThis from "../../components/ShareThis.astro";
                     </tbody>
                 </table>
             </div>
-            <p class="text-leader2">
-                *) MetroUI is absolutely free both for personal and commercial usage (distributed by MIT license).
+            <div data-role="directive" data-directive="tip" data-show-icon="true">
+                MetroUI is absolutely free both for personal and commercial usage (distributed by MIT license).
                 There are paid options for those who need technical support or require quick response to their questions
-                or just want to support this project financially ;)
-            </p>
+                or just want to support this project financially!
+            </div>
 
         </div>
     </section>

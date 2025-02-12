@@ -1,7 +1,7 @@
 ---
 import {Image} from "astro:assets"
 import PageLayout from "../../layouts/PageLayout.astro"
-import MoreQuestions from "../../components/MoreQuestions.astro";
+import MoreQuestions from "../../partials/more.astro";
 import advSearchImage from "../../images/site/advanced-search.png"
 import adhocReportingImage from "../../images/site/reporting.png"
 import dataFilteringImage from "../../images/site/data-filtering.png"
@@ -109,7 +109,7 @@ import FrequentlyAskedQuestions from "../../partials/faq.astro"
                 As we said before, EasyQuery will be helpful almost of any database application. However, for some most common scenarios we create a ready-to-use sample projects that you start using right away with a minimal adjustments to your data model and the database type. Here are these scenarios:
             </p>
 
-            <ul data-role="tabs" data-tabs-type="pills" data-expand="true" data-align="center" style="--tabs-item-background-active: var(--color-dark-violet); --tabs-item-color-active: #fff;">
+            <ul data-role="tabs" data-type="pills" data-expand="true" data-align="center" style="--tabs-item-background-active: var(--color-dark-violet); --tabs-item-color-active: #fff;">
                 <li><a href="#reporting">Reporting</a></li>
                 <li><a href="#adv-search">Advanced Search</a></li>
                 <li><a href="#filtering">Data Filtering</a></li>
